@@ -6,7 +6,10 @@
 		width: 100%;
 		height: 100%;
 		background-color: #C9D9FF;
-		background-image: url("../images/background.png");
+		background: -webkit-linear-gradient(#D1DAEE, #FADD99);
+		background: -o-linear-gradient(#D1DAEE, #FADD99);
+		background: -moz-linear-gradient(#D1DAEE, #FADD99);
+		background: linear-gradient(#D1DAEE, #FADD99);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
