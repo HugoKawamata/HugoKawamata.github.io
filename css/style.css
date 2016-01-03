@@ -136,6 +136,16 @@
 		margin-bottom: 20px;
 	}
 
+	@media only handheld{
+		#main_body{
+			min-width: 0em;
+		}
+
+		.page_header{
+			min-width:0em;
+		}
+	}
+
 	#subhead table{
 		margin: auto;
 		padding:0 10%;
