@@ -1,0 +1,59 @@
+/* Variables and Mixins */
+/* General */
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background: #444;
+  font-family: futura, sans-serif; }
+
+h2 {
+  font-size: 1.5em;
+  padding: 3px 0px 10px 0px; }
+
+#maintext {
+  background: #222;
+  color: #ccccaa;
+  min-height: calc(100% - 400px);
+  width: 60%;
+  margin: auto;
+  padding: 0px 3%;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+
+.navbar {
+  background-color: #800000;
+  width: 70%;
+  margin: auto;
+  z-index: 500;
+  padding: 10px 0px;
+  position: absolute;
+  left: 15%;
+  transform: rotate(-7deg) skewx(-7deg) translate(0px, 60px); }
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+    margin: 0px; }
+    .navbar ul li {
+      display: inline-block;
+      position: relative;
+      padding: 7px 25px; }
+    .navbar ul a {
+      color: #222;
+      text-transform: uppercase;
+      text-decoration: none; }
+
+footer {
+  background-color: #800000;
+  width: 70%;
+  margin: auto;
+  z-index: 500;
+  padding: 10px 0px;
+  position: absolute;
+  left: 15%;
+  transform: rotate(-7deg) skewx(-7deg) translate(0px, -100px); }
+
+/* Trig functions from unindented.org */
+
+/*# sourceMappingURL=showcase1.css.map */

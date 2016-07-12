@@ -1,0 +1,139 @@
+/* Variables and Mixins */
+$grey1: #222;
+$grey2: #444;
+$red1: #800000;
+$red2: #BF0000;
+$offw: #ccccaa;
+
+$ribbonheight: calc(sin(7deg) * 70%);
+
+@mixin ribbon{
+    background-color: $red1;
+    width: 70%;
+    margin: auto;
+    z-index: 500;
+    padding: 10px 0px;
+    position: absolute;
+    left: 15%;
+}
+
+/* General */
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: $grey2;
+    font-family: futura, sans-serif;
+}
+
+h2{
+    font-size: 1.5em;
+    padding: 3px 0px 10px 0px;
+}
+
+#maintext{
+    background: $grey1;
+    color: $offw;
+    min-height: calc(100% - 400px);
+    width: 60%;
+    margin: auto;
+    padding: 0px 3%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+
+.navbar{
+    @include ribbon;
+    transform: rotate(-7deg) skewx(-7deg) translate(0px, 60px);
+    
+    ul{
+        list-style: none;
+        text-align: center;
+        margin: 0px;
+        
+        li{
+            display: inline-block;
+            position: relative;
+            padding: 7px 25px;
+        }
+        
+        a{
+            color: $grey1;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+
+footer{
+    @include ribbon;
+    transform: rotate(-7deg) skewx(-7deg) translate(0px, -100px);
+}
+
+
+/* Trig functions from unindented.org */
+
+    @function pow($number, $exp) {
+      $value: 1;
+      @if $exp > 0 {
+        @for $i from 1 through $exp {
+          $value: $value * $number;
+        }
+      }
+      @else if $exp < 0 {
+        @for $i from 1 through -$exp {
+          $value: $value / $number;
+        }
+      }
+      @return $value;
+    }
+
+    @function fact($number) {
+      $value: 1;
+      @if $number > 0 {
+        @for $i from 1 through $number {
+          $value: $value * $i;
+        }
+      }
+      @return $value;
+    }
+
+    @function pi() {
+      @return 3.14159265359;
+    }
+
+    @function rad($angle) {
+      $unit: unit($angle);
+      $unitless: $angle / ($angle * 0 + 1);
+      // If the angle has 'deg' as unit, convert to radians.
+      @if $unit == deg {
+        $unitless: $unitless / 180 * pi();
+      }
+      @return $unitless;
+    }
+
+    @function sin($angle) {
+      $sin: 0;
+      $angle: rad($angle);
+      // Iterate a bunch of times.
+      @for $i from 0 through 10 {
+        $sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+      }
+      @return $sin;
+    }
+
+    @function cos($angle) {
+      $cos: 0;
+      $angle: rad($angle);
+      // Iterate a bunch of times.
+      @for $i from 0 through 10 {
+        $cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+      }
+      @return $cos;
+    }
+
+    @function tan($angle) {
+      @return sin($angle) / cos($angle);
+    }
