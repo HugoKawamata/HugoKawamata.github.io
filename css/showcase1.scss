@@ -15,6 +15,10 @@ $ribbonheight: calc(sin(7deg) * 70%);
     padding: 10px 0px;
     position: absolute;
     left: 15%;
+    
+    p{
+        padding: 7px 0px;
+    }
 }
 
 /* General */
@@ -30,6 +34,12 @@ body{
 h2{
     font-size: 1.5em;
     padding: 3px 0px 10px 0px;
+}
+
+.uline{
+    height: 2px;
+    background-color: $red1;
+    margin: 0px 0px 15px 0px;
 }
 
 #maintext{
@@ -67,9 +77,29 @@ h2{
     }
 }
 
+.col-1{
+    display: inline-block;
+    width: 50%;
+}
+
+.col-2{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+#logo{
+    width: 40%;
+    border-radius: 50%;
+    border-color: $red1;
+    border-width: 10px;
+    margin: auto;
+}
+
 footer{
     @include ribbon;
     transform: rotate(-7deg) skewx(-7deg) translate(0px, -100px);
+    text-align: center;
 }
 
 

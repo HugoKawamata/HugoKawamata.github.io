@@ -12,6 +12,11 @@ h2 {
   font-size: 1.5em;
   padding: 3px 0px 10px 0px; }
 
+.uline {
+  height: 2px;
+  background-color: #800000;
+  margin: 0px 0px 15px 0px; }
+
 #maintext {
   background: #222;
   color: #ccccaa;
@@ -31,6 +36,8 @@ h2 {
   position: absolute;
   left: 15%;
   transform: rotate(-7deg) skewx(-7deg) translate(0px, 60px); }
+  .navbar p {
+    padding: 7px 0px; }
   .navbar ul {
     list-style: none;
     text-align: center;
@@ -44,6 +51,22 @@ h2 {
       text-transform: uppercase;
       text-decoration: none; }
 
+.col-1 {
+  display: inline-block;
+  width: 50%; }
+
+.col-2 {
+  display: inline-block;
+  width: 49%;
+  text-align: center; }
+
+#logo {
+  width: 40%;
+  border-radius: 50%;
+  border-color: #800000;
+  border-width: 10px;
+  margin: auto; }
+
 footer {
   background-color: #800000;
   width: 70%;
@@ -52,7 +75,10 @@ footer {
   padding: 10px 0px;
   position: absolute;
   left: 15%;
-  transform: rotate(-7deg) skewx(-7deg) translate(0px, -100px); }
+  transform: rotate(-7deg) skewx(-7deg) translate(0px, -100px);
+  text-align: center; }
+  footer p {
+    padding: 7px 0px; }
 
 /* Trig functions from unindented.org */
 
