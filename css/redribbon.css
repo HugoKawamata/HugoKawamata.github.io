@@ -14,7 +14,7 @@ h2 {
 
 .uline {
   height: 2px;
-  background-color: #800000;
+  background-color: #BF0000;
   margin: 0px 0px 15px 0px; }
 
 #maintext {
@@ -23,22 +23,45 @@ h2 {
   min-height: calc(100% - 400px);
   width: 60%;
   margin: auto;
-  padding: 0px 3%;
+  padding: 0px;
   padding-top: 200px;
   padding-bottom: 200px; }
 
-.bodyarticle {
-  padding: 30px 0px 0px 0px; }
+article {
+  padding: 30px 6% 30px 6%; }
 
-.navbar {
-  background-color: #800000;
+.big-pic {
+  max-width: 100%;
+  background-image: url(../images/redribbonbg.jpg);
+  background-size: cover;
+  height: 300px; }
+
+#title {
+  background-color: #BF0000;
   width: 70%;
   margin: auto;
   z-index: 500;
   padding: 10px 0px;
   position: absolute;
   left: 15%;
-  transform: rotate(-7deg) skewx(-7deg) translate(0px, 60px); }
+  transform: rotate(-7deg) skewx(-7deg) translate(0px, 50px);
+  text-align: center; }
+  #title p {
+    padding: 7px 0px; }
+  #title span {
+    padding: 7px;
+    text-align: center;
+    font-size: 2em; }
+
+.navbar {
+  background-color: #BF0000;
+  width: 70%;
+  margin: auto;
+  z-index: 500;
+  padding: 10px 0px;
+  position: absolute;
+  left: 15%;
+  transform: rotate(-7deg) skewx(-7deg) translate(0px, 100px); }
   .navbar p {
     padding: 7px 0px; }
   .navbar ul {
@@ -48,15 +71,20 @@ h2 {
     .navbar ul li {
       display: inline-block;
       position: relative;
-      padding: 7px 25px; }
+      padding: 4px 25px; }
     .navbar ul a {
       color: #222;
       text-transform: uppercase;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: color 0.2s; }
+      .navbar ul a:hover {
+        color: #FFF;
+        transition: color 0.2s; }
 
 .col-1 {
   display: inline-block;
-  width: 50%; }
+  width: 50%;
+  padding-bottom: 10px; }
 
 .col-2 {
   display: inline-block;
@@ -66,12 +94,12 @@ h2 {
 #logo {
   width: 40%;
   border-radius: 50%;
-  border-color: #800000;
+  border-color: #BF0000;
   border-width: 10px;
   margin: auto; }
 
 footer {
-  background-color: #800000;
+  background-color: #BF0000;
   width: 70%;
   margin: auto;
   z-index: 500;
@@ -85,4 +113,4 @@ footer {
 
 /* Trig functions from unindented.org */
 
-/*# sourceMappingURL=showcase1.css.map */
+/*# sourceMappingURL=redribbon.css.map */

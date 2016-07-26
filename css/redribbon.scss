@@ -1,7 +1,7 @@
 /* Variables and Mixins */
 $grey1: #222;
 $grey2: #444;
-$red1: #800000;
+$red1: #BF0000;
 $red2: #BF0000;
 $offw: #ccccaa;
 
@@ -48,19 +48,40 @@ h2{
     min-height: calc(100% - 400px);
     width: 60%;
     margin: auto;
-    padding: 0px 3%;
+    padding: 0px;
     padding-top: 200px;
     padding-bottom: 200px;
     
 }
 
-.bodyarticle{
-    padding: 30px 0px 0px 0px;
+article{
+    padding: 30px 6% 30px 6%;
 }
 
+.bodyarticle{
+    
+}
+
+.big-pic {
+    max-width: 100%;
+    background-image: url(../images/redribbonbg.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+#title{
+    @include ribbon;
+    transform: rotate(-7deg) skewx(-7deg) translate(0px, 50px);
+    text-align: center;
+    span{
+        padding: 7px;
+        text-align: center;
+        font-size: 2em;
+    }
+}
 .navbar{
     @include ribbon;
-    transform: rotate(-7deg) skewx(-7deg) translate(0px, 60px);
+    transform: rotate(-7deg) skewx(-7deg) translate(0px, 100px);
     
     ul{
         list-style: none;
@@ -70,13 +91,19 @@ h2{
         li{
             display: inline-block;
             position: relative;
-            padding: 7px 25px;
+            padding: 4px 25px;
         }
         
         a{
             color: $grey1;
             text-transform: uppercase;
             text-decoration: none;
+            transition: color 0.2s;
+            
+            &:hover{
+                color: #FFF;
+                transition: color 0.2s;
+            }
         }
     }
 }
@@ -84,6 +111,7 @@ h2{
 .col-1{
     display: inline-block;
     width: 50%;
+    padding-bottom: 10px;
 }
 
 .col-2{
