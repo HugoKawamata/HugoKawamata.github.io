@@ -1,0 +1,178 @@
+/* Animations */
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+
+/* Variables and Mixins */
+
+@mixin two-c-grad($c1, $c2){
+    background: -webkit-linear-gradient(left top, $c1, $c2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, $c1, $c2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, $c1, $c2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, $c1, $c2); /* Standard syntax */
+}
+    
+$textc: #000;
+
+/* Global */
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: $textc;
+}
+
+h2{
+    font-size: 1.7em;
+    padding: 5px 0px 10px 0px;
+}
+
+h5{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 2px 0px 10px 0px;
+}
+
+.underline{
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+header{
+    padding: 80px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 2;
+    
+    .head-img {
+        width: 4.5em;
+        padding: 0 30px;
+        padding-top: 10px;
+        
+        img{
+            border-radius: 100%;
+            width: 100%;
+            -webkit-animation:spin 7s linear infinite;
+            -moz-animation:spin 7s linear infinite;
+            animation:spin 7s linear infinite;
+        }
+    }
+    
+    .head-text{
+        padding-top: 10px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 4.5em;
+        
+    }
+    
+}
+
+nav{
+    width: 100%;
+    background-color: rgba(51, 153, 255, 0.9);
+    min-height: 40px;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    
+    .nav-logo{
+        max-width: 20px;
+        padding: 10px;
+        
+        img{
+            border-radius: 100%;
+            width: 100%;
+        }
+    }
+    .nav-links{
+        flex-grow: 2;
+        
+        .nav-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            li{
+
+                padding: 10px 20px;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                font-family: 'Work Sans', sans-serif;
+            }
+        }
+    }
+}
+
+.jumbo{
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    
+    .colour-layer{
+        min-height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        
+        .featurebox{
+            margin-top: 70px;
+            margin-bottom: 70px;
+            width: 60%;
+            display: flex;
+            
+            .featbox-text{
+                width:50%;
+                padding: 3%;
+            }
+            
+            .featbox-image{
+                width:50%;
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .featbox-image-1{
+                background-image: url(../images/generix/office1.jpg);
+            }
+        }
+        
+        .featurebox-blue{
+            background: rgba(0, 51, 204, 0.95);
+            @include two-c-grad(rgba(0, 51, 204, 0.9), rgba(0, 153, 204, 0.9));
+        }
+        
+        .featurebox-orange{
+            background: rgba(255, 153, 51, 0.95);
+            @include two-c-grad(rgba(255, 153, 51, 0.9), rgba(255, 204, 0, 0.9));
+        }
+    }
+    
+    .blue-layer{
+        background: rgba(0, 102, 255, 0.6);
+        @include two-c-grad(rgba(0,102,255,0.6), rgba(0, 255, 204, 0.6));
+    }
+    
+    .orange-layer{
+        background: rgba(255, 153, 51, 0.6);
+        @include two-c-grad(rgba(255, 153, 51, 0.6), rgba(255, 204, 0, 0.6));
+    }
+}
+
+.jumbo-1{
+    background-image: url(../images/generix/office1.jpg);
+}
+
