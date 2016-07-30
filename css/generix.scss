@@ -23,8 +23,10 @@ $textc: #000;
 /* Global */
 
 
+
 body{
     font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -50,7 +52,7 @@ h5{
 }
 
 header{
-    padding: 80px 30px;
+    padding: 50px 30px 0px 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -75,57 +77,64 @@ header{
         padding-top: 10px;
         font-family: 'PT Sans', sans-serif;
         font-size: 4.5em;
-        
+        text-align: center;
     }
     
 }
+@media (min-device-width: 640px){
+    nav{
+        width: 100%;
+        background-color: rgba(51, 153, 255, 0.9);
+        min-height: 40px;
+        display: flex;
+        position: fixed;
+        z-index: 10;
 
-nav{
-    width: 100%;
-    background-color: rgba(51, 153, 255, 0.9);
-    min-height: 40px;
-    display: flex;
-    position: fixed;
-    z-index: 10;
-    
-    .nav-logo{
-        max-width: 20px;
-        padding: 10px;
-        
-        img{
-            border-radius: 100%;
-            width: 100%;
-        }
-    }
-    .nav-links{
-        flex-grow: 2;
-        
-        .nav-list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .nav-logo{
+            max-width: 20px;
+            padding: 10px;
 
-            li{
-
-                padding: 10px 20px;
-                font-size: 1.5em;
-                text-transform: uppercase;
-                font-family: 'Work Sans', sans-serif;
+            img{
+                border-radius: 100%;
+                width: 100%;
             }
         }
+        .nav-links{
+            flex-grow: 2;
+
+            .nav-list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                li{
+
+                    padding: 10px 20px;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    font-family: 'Work Sans', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media (max-device-width: 639px){
+    nav{
+        display: none;
     }
 }
 
 .jumbo{
     background-position: center;
     background-size: cover;
-    min-height: 500px;
+    min-height: 100vh;
     
     .colour-layer{
-        min-height: 500px;
+        min-height: 100vh;
         display: flex;
         justify-content: space-around;
-        align-content: flex-end;
+        align-content: center;
         flex-wrap: wrap;
         
         .featurebox{
@@ -133,20 +142,42 @@ nav{
             margin-bottom: 70px;
             width: 60%;
             display: flex;
+            flex-wrap: wrap;
+            height: 60vh;
             
             .featbox-text{
                 width:50%;
                 padding: 3%;
+                padding-top: 10vh;
+                padding-bottom: 12vh;
+                min-width: 230px;
+                overflow: auto;
             }
             
+           
             .featbox-image{
-                width:50%;
                 background-size: cover;
                 background-position: center;
+                flex-grow: 2;
             }
+            
+            @media (max-device-width: 639px){
+                .featbox-image{
+                    display: none;
+                }
+            }
+            
             
             .featbox-image-1{
                 background-image: url(../images/generix/office1.jpg);
+            }
+            
+            .featbox-image-2{
+                background-image: url(../images/generix/computer.jpg);
+            }
+            
+            .featbox-image-3{
+                background-image: url(../images/generix/guy.jpg);
             }
         }
         
@@ -157,18 +188,28 @@ nav{
         
         .featurebox-orange{
             background: rgba(255, 153, 51, 0.95);
-            @include two-c-grad(rgba(255, 153, 51, 0.9), rgba(255, 204, 0, 0.9));
+            @include two-c-grad(rgba(255, 102, 0, 0.9), rgba(255, 153, 0, 0.9));
+        }
+        
+        .featurebox-green{
+            background: rgba(0, 204, 0, 0.95);
+            @include two-c-grad(rgba(0, 204, 0, 0.9), rgba(115, 230, 0, 0.9));
         }
     }
     
     .blue-layer{
-        background: rgba(0, 102, 255, 0.6);
-        @include two-c-grad(rgba(0,102,255,0.6), rgba(0, 255, 204, 0.6));
+        background: rgba(0, 102, 255, 0.9);
+        @include two-c-grad(rgba(0,102,255,0.9), rgba(0, 255, 204, 0.9));
     }
     
     .orange-layer{
-        background: rgba(255, 153, 51, 0.6);
-        @include two-c-grad(rgba(255, 153, 51, 0.6), rgba(255, 204, 0, 0.6));
+        background: rgba(255, 153, 51, 0.9);
+        @include two-c-grad(rgba(255, 153, 51, 0.9), rgba(255, 204, 0, 0.9));
+    }
+    
+    .green-layer{
+        background: rgba(102, 255, 102, 0.95);
+        @include two-c-grad(rgba(102, 255, 102, 0.9), rgba(153, 255, 51, 0.9));
     }
 }
 
@@ -176,3 +217,46 @@ nav{
     background-image: url(../images/generix/office1.jpg);
 }
 
+.jumbo-2{
+    background-image: url(../images/generix/computer.jpg);
+}
+
+.jumbo-3{
+    background-image: url(../images/generix/guy.jpg);
+}
+
+
+.footer{
+    background: rgb(153, 102, 255);
+    @include two-c-grad(rgb(153, 102, 255), rgb(102, 0, 255));
+    
+    .foot-head{
+        font-size: 2em;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    
+    .underline{
+        max-width: 70vw;
+        margin: auto;
+    }
+    
+    .item-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        .foot-item{
+            padding: 30px 0px;
+            min-width: 20vw;
+            
+            h2{
+                text-align: center;
+            }
+            
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
