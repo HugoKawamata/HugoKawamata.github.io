@@ -127,7 +127,8 @@ header {
         .jumbo .colour-layer .featurebox .featbox-text {
           padding-top: 30px;
           padding-bottom: 30px;
-          margin: auto; } }
+          margin: auto;
+          overflow: hidden; } }
     .jumbo .colour-layer .featurebox-blue {
       background: rgba(0, 51, 204, 0.95);
       background: -webkit-linear-gradient(left top, rgba(0, 51, 204, 0.9), rgba(0, 153, 204, 0.9));
