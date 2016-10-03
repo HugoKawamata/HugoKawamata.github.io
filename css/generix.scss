@@ -181,6 +181,20 @@ header{
             }
         }
         
+        @media (max-width: 639px) {
+            .featurebox {
+                width: 90%;
+                
+                .featbox-text {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    margin: auto;
+                }
+            }
+            
+            
+        }
+        
         .featurebox-blue{
             background: rgba(0, 51, 204, 0.95);
             @include two-c-grad(rgba(0, 51, 204, 0.9), rgba(0, 153, 204, 0.9));
