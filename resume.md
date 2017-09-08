@@ -11,14 +11,19 @@
 </table>
 
 ##Work Experience
+###Personal Projects
+* [SyncUQ](https://www.syncuq.com/) - Python (Flask), Elm, Sass, Postgres. A University of Queensland exclusive schedule sharing SPA. Collaboration with two friends.
+* [Spozberry](https://github.com/HugoKawamata/spozberry-autoplay) - Python. A command line app which connects to a Music Player Daemon and automatically plays music when you get home.
+* [Funny Fish](https://funny-fish.herokuapp.com/) - Python (Flask), ReactJS, Sass, Postgres. A clicker/idle game. Still in development.
+* [Other](https://github.com/HugoKawamata) - See my Github for more.
+
 ###Web Devlopment
 **Freelance Development** - Owning and operating a freelance web development company. The following websites have been designed, developed and deployed by my business partner and me.
 
-* [bonsaidesign.com.au](http://www.bonsaidesign.com.au/) - HTML, CSS, Javascript: Static multi-page website for a freelance web development company with CSS animations.
+* [bonsaidesign.com.au](http://www.bonsaidesign.com.au/) - HTML, CSS: Static multi-page website for a freelance web development company with CSS animations.
 * [uqbars.com](http://www.uqbars.com/) - Wordpress: Static promotions site for a university social club.
 * [gasespresso.com.au](http://www.gasespresso.com.au/) - Wordpress: Interactive one page information site for a boutique cafe and restaurant.
 * [wellnessforlaw.com.au](http://wellnessforlaw.com/) - Wordpress: Blog and resource for promoting mental wellness in the law profession.
-* [bagit.me](http://bagit.me/) - Wordpress: Ecommerce backpack retailer.
 
 **Tutoring** - Tutoring DECO1400 (Introduction to Web Design) at St John's College. The course covers:
 
@@ -27,19 +32,15 @@
 - Using JQuery to create dynamic websites.
 
 ###Hospitality
-**Mary Street Catering** - Part time work for a catering company primarily focussed on providing a cafe and restaurant for The Village at Yeronga, a retirement village. This places an emphasis on friendly interaction with customers, as most customers return at least once a week, if not every day. (2015 - Present)
-
-- Barista work - Skilled at making coffee and delicious breakfast food.
-- Waiting - Waiting tables for large functions of up to 100 people as well as smaller services (around 30 people) for both lunch and dinner
-- Kitchen work - Various kitchen jobs (eg. table setting, service prep, cleaning)
+**Mary Street Catering** - Part time work for a catering company primarily focussed on providing a cafe and restaurant for The Village at Yeronga, a retirement village. This places an emphasis on friendly interaction with customers, as most customers return at least once a week, if not every day. Empathy and patience are also key skills needed, as a majority of the customers are elderly. (2015 - 2017)
 
 ##Technologies
-- Object Oriented Programming: **Python**, **Java**
+- Object Oriented Programming: **Python**, Java
 - Functional: *Clojure*, *Haskell*
 - Other: C, *Assembly*
-- Web Development: **HTML**, **CSS**, **Wordpress**, Javascript/JQuery, Elm, Flask, Ruby on Rails
-- Tools: **Git**, **FTP**, Jenkins, SonarQube, Heroku
-- OS: **OSX (bash)**, **Windows**
+- Web Development: **Flask**, **React**, **HTML**, **CSS**, **Wordpress (Divi)**, React-Native, Javascript/JQuery, Elm
+- Tools: **Git**, **Vim**, Heroku, Jenkins, SonarQube
+- OS: **OSX (bash)**, **Windows**, Raspbian (Debian for Raspberry Pi)
 - DB: MySQL, Postgres
 
 (**Bold** indicates very high skill level. *Italics* indicates limited knowledge.)
@@ -49,8 +50,7 @@
 
 
 - Bachelor of Science, Major in Computer Science
-- Overall GPA: 6.3625
-- GPA (only computer science courses): 6.667
+- Overall GPA: 6.818
 
 **Anglican Church Grammar School (Churchie)**:
 
@@ -62,6 +62,7 @@
 ##Awards
 - Dean's Commendation for Academic Excellence (2016, Semester 1, Semester GPA of 6.75)
 - Dean's Commendation for Academic Excellence (2016, Semester 2, Semester GPA of 7.0)
+- Dean's Commendation for Academic Excellence (2017, Semester 1, Semester GPA of 6.667)
 - Silver Duke of Edinburgh Award (2013)
 - 2nd Dan Black Belt in Shitō-Ryū Karate
 
